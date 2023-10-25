@@ -1,0 +1,19 @@
+﻿<Window x:Class="PresentationLayer.ReservationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationLayer"
+        mc:Ignorable="d"
+        Title="ReservationWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="20"/>
+        <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="ReservationGrid"></DataGrid>
+        <Button Grid.Row="1" Name="Previous" Content="Previous" Click="PrevButton_Click" />
+        <Button Grid.Row="2" Name="Next" Content="Next" Click="NextButton_Click"/>
+    </Grid>
+</Window>

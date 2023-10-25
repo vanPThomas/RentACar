@@ -1,0 +1,174 @@
+﻿<Window x:Class="PresentationLayer.SearchCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationLayer"
+        mc:Ignorable="d"
+        Title="SearchCustomer" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="First Name"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Name="FirstNameTextBox" Margin="5"/>
+            <Label Grid.Row="0" Grid.Column="2" Content="Last Name"/>
+            <TextBox Grid.Row="0" Grid.Column="3" Name="LastNameTextBox" Margin="5"/>
+            <Button Grid.Row="0" Grid.Column="4" Name="SearchCustomerButton" Content="Search Customer" Margin="5" Click="SearchCustomerButton_Click"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Customer"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="Customer ID"/>
+            <TextBox Grid.Row="1" Grid.Column="2" Name="CustomerIDTextBox" Margin="5" IsReadOnly="True"/>
+            <Label Grid.Row="1" Grid.Column="3" Content="Name"/>
+            <TextBox Grid.Row="1" Grid.Column="4" Name="NameTextBox" Margin="5" IsReadOnly="True"/>
+            <Label Grid.Row="2" Grid.Column="1" Content="Street"/>
+            <TextBox Grid.Row="2" Grid.Column="2" Name="StreetTextBox" Margin="5" IsReadOnly="True"/>
+            <Label Grid.Row="2" Grid.Column="3" Content="House Number"/>
+            <TextBox Grid.Row="2" Grid.Column="4" Name="HouseNumberTextBox" Margin="5" IsReadOnly="True"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="City"/>
+            <TextBox Grid.Row="3" Grid.Column="2" Name="CityTextBox" Margin="5" IsReadOnly="True"/>
+            <Label Grid.Row="3" Grid.Column="3" Content="Tax Number"/>
+            <TextBox Grid.Row="3" Grid.Column="4" Name="TaxNumberTextBox" Margin="5" IsReadOnly="True"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="Start Time"/>
+                <DatePicker Name="StartPicker" Grid.Column="1">
+                    <DatePicker.Resources>
+                        <Style TargetType="DatePickerTextBox">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <TextBox Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType=DatePicker}, StringFormat={}{0:dd/MM/yyyy hh:mm:ss}}"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DatePicker.Resources>
+                </DatePicker>
+                <Label Grid.Row="0" Grid.Column="2" Content="End Time"/>
+                <DatePicker Name="EndPicker" Grid.Column="3">
+                    <DatePicker.Resources>
+                        <Style TargetType="DatePickerTextBox">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <TextBox Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType=DatePicker}, StringFormat={}{0:dd/MM/yyyy hh:mm:ss}}"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DatePicker.Resources>
+                </DatePicker>
+                <Button Grid.Row="0" Grid.Column="4" Name="Button" Content="Search Reservations" Margin="5" Click="SearchReservationsButton_Click"/>
+            </Grid>
+            <DataGrid Name="ReservationGrid" Grid.Row="1"></DataGrid>
+
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Date and Time"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Name="TimeTextBox" Margin="5" Text="dd/MM/yyyy hh:mm"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Car 1"/>
+            <ComboBox Name="Car1Choice" Grid.Column="1" Grid.Row="1">
+                <ComboBoxItem Content="Audi A8"/>
+                <ComboBoxItem Content="Ford Mustang"/>
+                <ComboBoxItem Content="BMW i8"/>
+                <ComboBoxItem Content="BMW i8 Spyder"/>
+                <ComboBoxItem Content="Mercedes G63 AMG"/>
+                <ComboBoxItem Content="Bentley Continental GTC"/>
+                <ComboBoxItem Content="Volkswagen Kever Cabrio"/>
+                <ComboBoxItem Content="Austin Healey 3000 S"/>
+                <ComboBoxItem Content="Porsche 912"/>
+                <ComboBoxItem Content="Mercedes 190 SL"/>
+                <ComboBoxItem Content="Packard 120 (chauffeur)"/>
+            </ComboBox>
+            <Label Grid.Row="2" Grid.Column="0" Content="Car 2"/>
+            <ComboBox Name="Car2Choice" Grid.Column="1" Grid.Row="2">
+                <ComboBoxItem Content="Audi A8"/>
+                <ComboBoxItem Content="Ford Mustang"/>
+                <ComboBoxItem Content="BMW i8"/>
+                <ComboBoxItem Content="BMW i8 Spyder"/>
+                <ComboBoxItem Content="Mercedes G63 AMG"/>
+                <ComboBoxItem Content="Bentley Continental GTC"/>
+                <ComboBoxItem Content="Volkswagen Kever Cabrio"/>
+                <ComboBoxItem Content="Austin Healey 3000 S"/>
+                <ComboBoxItem Content="Porsche 912"/>
+                <ComboBoxItem Content="Mercedes 190 SL"/>
+                <ComboBoxItem Content="Packard 120 (chauffeur)"/>
+            </ComboBox>
+            <Label Grid.Row="3" Grid.Column="0" Content="Arrangement"/>
+            <ComboBox Name="ArrangementChoice" Grid.Column="1" Grid.Row="3">
+                <ComboBoxItem Content="Airport"/>
+                <ComboBoxItem Content="Business"/>
+                <ComboBoxItem Content="Wedding"/>
+                <ComboBoxItem Content="NightLife"/>
+            </ComboBox>
+            <Label Grid.Row="0" Grid.Column="2" Content="Number of Hours"/>
+            <TextBox Grid.Row="0" Grid.Column="3" Name="NumberOfHoursTextBox" Margin="5"/>
+            <Label Grid.Row="1" Grid.Column="2" Content="Start Location"/>
+            <ComboBox Name="StartLocChoice" Grid.Column="3" Grid.Row="1">
+                <ComboBoxItem Content="Gent"/>
+                <ComboBoxItem Content="Antwerpen"/>
+                <ComboBoxItem Content="Charleroi"/>
+                <ComboBoxItem Content="Hasselt"/>
+                <ComboBoxItem Content="Brussel"/>
+            </ComboBox>
+            <Label Grid.Row="2" Grid.Column="2" Content="End Location"/>
+            <ComboBox Name="EndLocChoice" Grid.Column="3" Grid.Row="2">
+                <ComboBoxItem Content="Gent"/>
+                <ComboBoxItem Content="Antwerpen"/>
+                <ComboBoxItem Content="Charleroi"/>
+                <ComboBoxItem Content="Hasselt"/>
+                <ComboBoxItem Content="Brussel"/>
+            </ComboBox>
+            <Label Grid.Row="3" Grid.Column="2" Content="Make Reservation"/>
+            <Button Grid.Row="3" Grid.Column="4" Name="CreateReservationButton" Content="Create Reservation" Margin="1" Click="CreateReservationButton_Click"/>
+            
+        </Grid>
+        
+    </Grid>
+</Window>

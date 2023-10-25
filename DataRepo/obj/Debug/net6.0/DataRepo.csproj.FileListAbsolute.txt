@@ -1,0 +1,15 @@
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\bin\Debug\net6.0\DataRepo.deps.json
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\bin\Debug\net6.0\DataRepo.dll
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\bin\Debug\net6.0\DataRepo.pdb
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.csproj.AssemblyReference.cache
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.GeneratedMSBuildEditorConfig.editorconfig
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.AssemblyInfoInputs.cache
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.AssemblyInfo.cs
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.csproj.CoreCompileInputs.cache
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.csproj.CopyComplete
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.dll
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\refint\DataRepo.dll
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\DataRepo.pdb
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\obj\Debug\net6.0\ref\DataRepo.dll
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\bin\Debug\net6.0\BussinessLayer.dll
+C:\additions\hogent\pg\workspace\RentACar\DataRepo\bin\Debug\net6.0\BussinessLayer.pdb

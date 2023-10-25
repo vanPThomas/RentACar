@@ -1,0 +1,12 @@
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\bin\Debug\net6.0\DataLayer.dll
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\DataLayer.dll
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll

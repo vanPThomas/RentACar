@@ -1,0 +1,12 @@
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\bin\Debug\net6.0\BussinessLayer.deps.json
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\bin\Debug\net6.0\BussinessLayer.dll
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\bin\Debug\net6.0\BussinessLayer.pdb
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\BussinessLayer.csproj.AssemblyReference.cache
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\BussinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\BussinessLayer.AssemblyInfoInputs.cache
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\BussinessLayer.AssemblyInfo.cs
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\BussinessLayer.csproj.CoreCompileInputs.cache
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\BussinessLayer.dll
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\refint\BussinessLayer.dll
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\BussinessLayer.pdb
+C:\additions\hogent\pg\workspace\RentACar\DataLayer\obj\Debug\net6.0\ref\BussinessLayer.dll
